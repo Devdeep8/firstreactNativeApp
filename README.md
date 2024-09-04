@@ -1,3 +1,105 @@
+# PlanToAR
+
+PlanToAR is an innovative React Native application that combines travel planning with augmented reality (AR) experiences. This app allows users to explore destinations, plan their trips, and visualize their travel destinations using AR technology.
+
+## Features
+
+- Interactive destination exploration
+- Travel planning with customizable search options
+- Augmented Reality (AR) camera integration for immersive experiences
+- Virtual Reality (VR) tour options
+- Weather information and local attractions for destinations
+
+## Screenshots
+
+[Include screenshots of your app here]
+
+## Installation
+
+To get started with PlanToAR, follow these steps:
+
+1. Clone the repository:
+   \\`\\`\\`
+   git clone https://github.com/yourusername/plantoar.git
+   cd plantoar
+   \\`\\`\\`
+
+2. Install dependencies:
+   \\`\\`\\`
+   npm install
+   \\`\\`\\`
+
+3. Install specific dependencies for AR and UI components:
+   \\`\\`\\`
+   npm install react-native-camera react-native-vector-icons react-native-linear-gradient
+   \\`\\`\\`
+
+4. Link the native dependencies:
+   \\`\\`\\`
+   react-native link react-native-camera
+   react-native link react-native-vector-icons
+   react-native link react-native-linear-gradient
+   \\`\\`\\`
+
+5. iOS specific setup:
+   - Navigate to the iOS folder and install pods:
+     \\`\\`\\`
+     cd ios
+     pod install
+     cd ..
+     \\`\\`\\`
+   - Add the following to your `Info.plist`:
+     \\`\\`\\`xml
+     <key>NSCameraUsageDescription</key>
+     <string>PlanToAR needs access to your camera for AR features</string>
+     \\`\\`\\`
+
+6. Android specific setup:
+   - Add the following permissions to your `android/app/src/main/AndroidManifest.xml`:
+     \\`\\`\\`xml
+     <uses-permission android:name="android.permission.CAMERA" />
+     \\`\\`\\`
+
+## Running the App
+
+- For iOS:
+  \\`\\`\\`
+  npx react-native run-ios
+  \\`\\`\\`
+
+- For Android:
+  \\`\\`\\`
+  npx react-native run-android
+  \\`\\`\\`
+
+## Project Structure
+
+- `src/`: Source files for the project
+  - `components/`: Reusable React components
+  - `screens/`: Main screens of the application
+  - `services/`: API and other services
+  - `utils/`: Utility functions and constants
+
+## Contributing
+
+We welcome contributions to PlanToAR! Please read our [Contributing Guide](CONTRIBUTING.md) for details on our code of conduct and the process for submitting pull requests.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Acknowledgments
+
+- Thanks to all contributors who have helped shape PlanToAR
+- Special thanks to the React Native community for their excellent documentation and support
+
+## Contact
+
+If you have any questions, feel free to reach out to us at [your-email@example.com](mailto:your-email@example.com).
+
+Happy traveling with PlanToAR! 🌍✈️🏞️
+
+
 This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
 # Getting Started
